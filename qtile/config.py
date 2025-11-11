@@ -37,7 +37,7 @@ import os
 import fontawesome as fa
 
 mod = "mod4"
-terminal = "kitty"
+terminal = "alacritty"
 
 keys = [
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
@@ -374,10 +374,10 @@ focus_on_window_activation = "smart"
 reconfigure_screens = True
 
 
-@hook.subscribe.startup_once
-def autostart():
-    home = os.path.expanduser("~/.config/qtile/autostart.sh")
-    subprocess.Popen([home])
+# @hook.subscribe.startup_once
+# def autostart():
+#     home = os.path.expanduser("~/.config/qtile/autostart.sh")
+#     subprocess.Popen([home])
 
 
 auto_minimize = True

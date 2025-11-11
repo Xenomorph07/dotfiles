@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+interval=5
+directory="$HOME/Pictures/Wallpapers"
+
+while true; do
+  find "$directory" -type f | shuf | while read -r img; do
+     echo "Setting wallpaper"
+     swww img --transition-type="wipe" --transition-angle=30 --transition-fps=144 "$img"
+     sleep "$interval"m
+  done
+done

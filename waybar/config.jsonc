@@ -7,17 +7,9 @@
   "spacing": 0, // Gaps between modules (4px)
   "margin-top": 4,
   // Choose the order of the modules
-  "modules-left": [
-    "cpu",
-    "memory",
-    "disk",
-    "clock#date"
-  ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
+  "modules-left": ["cpu", "memory", "disk", "clock#date"],
+  "modules-center": ["niri/workspaces"],
   "modules-right": [
-    // "mpd",
     "wireplumber",
     "backlight",
     "network",
@@ -54,6 +46,12 @@
       "6": " ",
       "7": " ",
       "8": " ",
+      "default": " ",
+    },
+  },
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
       "default": " ",
     },
   },
@@ -112,26 +110,12 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{icon} {temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", ""],
   },
   "backlight": {
     // "device": "acpi_video1",
     "format": "{icon} {percent}%",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ],
+    "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
   },
   "battery": {
     "states": {
@@ -144,13 +128,7 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ],
+    "format-icons": [" ", " ", " ", " ", " "],
   },
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -176,11 +154,7 @@
     "scroll-step": 5, // %, can be a float
     "format": "{icon} {volume}%",
     "format-muted": "<span color=\"#f7768e\">  </span>Muted",
-    "format-icons": [
-      "",
-      " ",
-      " "
-    ],
+    "format-icons": ["", " ", " "],
     "on-click": "pavucontrol",
   },
   "custom/media": {

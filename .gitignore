@@ -4,3 +4,4 @@ tmux/plugins/
 lazy-lock.json
 vedant_linux.pem
 pat_*
+*.lock
