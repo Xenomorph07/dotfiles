@@ -234,6 +234,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "~/.config/niri/scripts/wallpaper"
+spawn-sh-at-startup "vicinae server"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -308,6 +309,10 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
     Mod+R hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+
+    // vicinae
+    Mod+Space hotkey-overlay-title="Launcher: vicinae" repeat=false { spawn "vicinae" "toggle"; }
+    Mod+Y hotkey-overlay-title="Clipboard History: vicinae" repeat=false { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
