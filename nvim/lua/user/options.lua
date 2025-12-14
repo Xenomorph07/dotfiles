@@ -53,10 +53,13 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
 
+vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
+
 if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font:h14"
+  vim.o.guifont = "Maple Mono NF:h14"
   vim.g.neovide_refresh_rate = 144
   vim.g.neovide_cursor_vfx_mode = "pixiedust"
   vim.g.neovide_cursor_vfx_particle_density = 20.0
   vim.g.neovide_cursor_vfx_particle_lifetime = 1.5
+  vim.g.neovide_opacity = 0.8
 end

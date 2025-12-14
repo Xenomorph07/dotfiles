@@ -89,7 +89,7 @@ vim.lsp.enable({
   "gopls",
   "pyright",
   "elixirls",
-  "clangd",
+  -- "clangd",
   -- "cssls",
   -- "eslint",
   -- "tailwindcss",

@@ -3,4 +3,4 @@ require("user.remaps")
 require("user.lazy")
 require("user.lsp")
 
-vim.cmd.colorscheme("vague")
+vim.cmd.colorscheme("catppuccin")
